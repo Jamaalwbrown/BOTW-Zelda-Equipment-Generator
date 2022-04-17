@@ -7,10 +7,48 @@
   box-sizing: border-box;
 }
 
+
+
 /******************************************
 /* LAYOUT
 /*******************************************/
+html {
+  border: 2px solid red;
+  font-size: 2em;
+  font-family: 'Franklin Gothic Light', 'Arial Narrow', Arial, sans-serif;
+  background: linear-gradient(lightblue, green)
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+  text-align: center;
+  border: 2px solid purple;
+}
+
+button {
+  display: block;
+  align-items: center;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid black;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.column {
+  border: 2px solid orange;
+}
+
 img{
+  max-width: 900px;
+  max-height: 700px;
   display: block;
   margin: 0 auto;
 }
