@@ -16,14 +16,14 @@ html {
   border: 2px solid red;
   font-size: 2em;
   font-family: 'Franklin Gothic Light', 'Arial Narrow', Arial, sans-serif;
-  background: linear-gradient(lightblue, green)
+  background: linear-gradient(green, rgb(60, 165, 207))
 }
 
 header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   margin-bottom: 30px;
   text-align: center;
   border: 2px solid purple;
@@ -32,18 +32,22 @@ header {
 button {
   display: block;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .section-container {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
   border: 2px solid black;
   padding-left: 10vw;
   padding-right: 10vw;
 }
 
-.column {
+.column-left, .column-middle, .column-right  {
   border: 2px solid orange;
+  text-align: center;
+  font-size: 0.75em;
 }
 
 img{
@@ -51,6 +55,11 @@ img{
   max-height: 700px;
   display: block;
   margin: 0 auto;
+}
+
+span {
+  font-weight: bold;
+
 }
 
 

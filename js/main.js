@@ -2,8 +2,8 @@
 document.querySelector('button').addEventListener('click', getFetch)
 
 function getFetch(){
-  const choice = document.querySelector('input').value
-  console.log(choice)
+  // const choice = document.querySelector('input').value
+  // console.log(choice)
   document.querySelector('img').src = "img/link_ready.jpg"
 
   const url = 'https://botw-compendium.herokuapp.com/api/v2'
@@ -21,9 +21,19 @@ function getFetch(){
         const item2 = new EquipmentInfo(data.data.equipment[randomSelector2])
         const item3 = new EquipmentInfo(data.data.equipment[randomSelector3])
         
-        document.querySelector('h2').innerText = item1.name;
+        document.querySelector('#item-name-left').innerText = item1.name;
         document.querySelector('#item1-pic').src = item1.image;
-        document.querySelector('h3').innerText = item1.description;
+        document.querySelector('#item-explain-left').innerText = item1.description;
+
+        document.querySelector('#item-name-middle').innerText = item2.name;
+        document.querySelector('#item2-pic').src = item2.image;
+        document.querySelector('#item-explain-middle').innerText = item2.description;
+
+        document.querySelector('#item-name-right').innerText = item3.name;
+        document.querySelector('#item3-pic').src = item3.image;
+        document.querySelector('#item-explain-right').innerText = item3.description;
+
+        document.querySelector('#equipment-status').innerText = 'Scroll down to see your loadout';
 
         // if( data.media_type === 'image' ){
         //   document.querySelector('img').src = data.hdurl
