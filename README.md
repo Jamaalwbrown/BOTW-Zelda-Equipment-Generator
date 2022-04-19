@@ -1,7 +1,7 @@
 
 # Zelda Equipment Generator
 
-This is the source code for my demo project for my portfolio website. It was built to showcase what kind of website I can deliver to interested clients. It will be tweaked as I improve and grow as a developer
+A basic website that uses the Zelda Breath of the Wild API to generate a random equipment list for the user
 
 ## Table of contents
 
@@ -13,7 +13,7 @@ This is the source code for my demo project for my portfolio website. It was bui
 
 ## General Info
 
-A demo website of a coffee shop. It is purely for example and serves as a display of what type of websites I can deliver to clients intersted in my work
+The website hits the Zelda API and retrieves three random pieces of equipment with a name, image, and description for each.
 
 ## Technologies
 
@@ -28,15 +28,15 @@ A demo website of a coffee shop. It is purely for example and serves as a displa
 
 ## Status
 
-**Project is:** *in development*
+**Project is:** *completed*
 
 ## Inspiration
 
-Desire to help people gain a web presence using my web development skills
+Project to help gain familiarity and working with APIs
 
 ## Demo
 
-You can visit the website by going [here](www.jamaalbrown.me).
+You can visit the site by going [here](https://jamaalwbrown.github.io/BOTW-Zelda-Equipment-Generator/).
 
 ## Contact
 

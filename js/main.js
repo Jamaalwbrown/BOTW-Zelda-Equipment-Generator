@@ -1,9 +1,9 @@
 //Example fetch using pokemonapi.co
-document.querySelector('button').addEventListener('click', getFetch)
+document.querySelector('#get-equipment').addEventListener('click', getFetch)
+
+document.querySelector('#reset').addEventListener('click', resetPage)
 
 function getFetch(){
-  // const choice = document.querySelector('input').value
-  // console.log(choice)
   document.querySelector('img').src = "img/link_ready.jpg"
 
   const url = 'https://botw-compendium.herokuapp.com/api/v2'
@@ -34,18 +34,28 @@ function getFetch(){
         document.querySelector('#item-explain-right').innerText = item3.description;
 
         document.querySelector('#equipment-status').innerText = 'Scroll down to see your loadout';
-
-        // if( data.media_type === 'image' ){
-        //   document.querySelector('img').src = data.hdurl
-        // }else if(data.media_type === 'video'){
-        //   document.querySelector('iframe').src = data.url
-        // }
-       
-        // document.querySelector('h3').innerText = data.explanation
       })
       .catch(err => {
           console.log(`error ${err}`)
       });
+}
+
+function resetPage() {
+
+  document.querySelector('#item-name-left').innerText = "Empty Slot";
+  document.querySelector('#item1-pic').src = "";
+  document.querySelector('#item-explain-left').innerText = "Explanation";
+
+  document.querySelector('#item-name-middle').innerText = "Empty Slot"
+  document.querySelector('#item2-pic').src = "";
+  document.querySelector('#item-explain-middle').innerText = "Explanation";
+
+  document.querySelector('#item-name-right').innerText = "Empty Slot";
+  document.querySelector('#item3-pic').src = "";
+  document.querySelector('#item-explain-right').innerText = "Explanation";
+
+  document.querySelector('#equipment-status').innerText = 'I have no equipment';
+
 }
 
 class EquipmentInfo {

@@ -13,10 +13,10 @@
 /* LAYOUT
 /*******************************************/
 html {
-  border: 2px solid red;
   font-size: 2em;
   font-family: 'Franklin Gothic Light', 'Arial Narrow', Arial, sans-serif;
   background: linear-gradient(green, rgb(60, 165, 207))
+  /* border: 2px solid red; */
 }
 
 header {
@@ -26,7 +26,7 @@ header {
   justify-content: space-around;
   margin-bottom: 30px;
   text-align: center;
-  border: 2px solid purple;
+  /* border: 2px solid purple; */
 }
 
 button {
@@ -39,15 +39,15 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  border: 2px solid black;
   padding-left: 10vw;
   padding-right: 10vw;
+   /* border: 2px solid black; */
 }
 
 .column-left, .column-middle, .column-right  {
-  border: 2px solid orange;
   text-align: center;
   font-size: 0.75em;
+  /* border: 2px solid orange; */
 }
 
 img{
